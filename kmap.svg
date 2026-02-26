@@ -42,15 +42,11 @@
 <text x='250' y='316' text-anchor='middle' font-family='Arial' font-size='20' font-weight='bold'>X</text>
 <rect x='280' y='280' width='60' height='60' fill='none' stroke='#ddd' />
 <text x='310' y='316' text-anchor='middle' font-family='Arial' font-size='20' font-weight='bold'>1</text>
-<rect x='164' y='104' width='52' height='232' rx='12' fill='rgba(255, 0, 0, 0.3)' stroke='rgba(255, 0, 0, 0.3)' stroke-width='2' />
-<rect x='104' y='284' width='232' height='52' rx='12' fill='rgba(0, 0, 255, 0.3)' stroke='rgba(0, 0, 255, 0.3)' stroke-width='2' />
-<rect x='164' y='164' width='112' height='112' rx='12' fill='rgba(0, 128, 0, 0.3)' stroke='rgba(0, 128, 0, 0.3)' stroke-width='2' />
-<rect x='104' y='104' width='112' height='52' rx='12' fill='rgba(255, 165, 0, 0.3)' stroke='rgba(255, 165, 0, 0.3)' stroke-width='2' />
-<rect x='104' y='284' width='112' height='52' rx='12' fill='rgba(255, 165, 0, 0.3)' stroke='rgba(255, 165, 0, 0.3)' stroke-width='2' />
-<rect x='104' y='104' width='52' height='52' rx='12' fill='rgba(255, 0, 0, 0.3)' stroke='rgba(255, 0, 0, 0.3)' stroke-width='2' />
-<rect x='284' y='104' width='52' height='52' rx='12' fill='rgba(255, 0, 0, 0.3)' stroke='rgba(255, 0, 0, 0.3)' stroke-width='2' />
-<rect x='104' y='284' width='52' height='52' rx='12' fill='rgba(255, 0, 0, 0.3)' stroke='rgba(255, 0, 0, 0.3)' stroke-width='2' />
-<rect x='284' y='284' width='52' height='52' rx='12' fill='rgba(255, 0, 0, 0.3)' stroke='rgba(255, 0, 0, 0.3)' stroke-width='2' />
+<rect x='164' y='164' width='112' height='112' rx='12' fill='rgba(255, 0, 0, 0.3)' stroke='rgba(255, 0, 0, 0.3)' stroke-width='2' />
+<rect x='104' y='104' width='52' height='52' rx='12' fill='rgba(0, 0, 255, 0.3)' stroke='rgba(0, 0, 255, 0.3)' stroke-width='2' />
+<rect x='284' y='104' width='52' height='52' rx='12' fill='rgba(0, 0, 255, 0.3)' stroke='rgba(0, 0, 255, 0.3)' stroke-width='2' />
+<rect x='104' y='284' width='52' height='52' rx='12' fill='rgba(0, 0, 255, 0.3)' stroke='rgba(0, 0, 255, 0.3)' stroke-width='2' />
+<rect x='284' y='284' width='52' height='52' rx='12' fill='rgba(0, 0, 255, 0.3)' stroke='rgba(0, 0, 255, 0.3)' stroke-width='2' />
 <rect x='100' y='365' width='240' height='50' fill='#f4f4f4' rx='8' />
-<text x='220' y='400' text-anchor='middle' font-family='Arial' font-size='20' font-weight='bold'>F = c'd + ab' + bd + b'c' + b'd'</text>
+<text x='220' y='400' text-anchor='middle' font-family='Arial' font-size='20' font-weight='bold'>F = bd + b'd'</text>
 </svg>

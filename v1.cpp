@@ -67,8 +67,9 @@ public :
 
     // To solve
     vector<vector<pair<int, int>>> solve (){
+        vector<vector<pair<int, int>>> finalGroups;
         vector<vector<pair<int, int>>> Groups;
-        vector<pair<int, int>> groupdim = {{4, 4}, {4, 2}, {2, 4}, {4, 1}, {1, 4}, {2, 2}, {2, 1}, {1, 2}, {1, 1}};
+        vector<pair<int, int>> groupdim = {{4, 4}, {4, 2}, {2, 4},{2, 2}, {4, 1}, {1, 4}, {2, 1}, {1, 2}, {1, 1}};
         for(auto [nr, nc] : groupdim){
             for(auto [row, col] : mins){
                 bool flag1 = true;
@@ -93,16 +94,34 @@ public :
                     if(!flag1) break;
                 }
                 if(flag1 && flag2){
-                    Groups.push_back(group);
-                    for(auto [r, c] : group){
-                        if(grid[r][c] == 1){
-                            covered.insert({r, c});
+                    bool redundant = false;
+                        for (auto& existing : Groups) {
+                            if (existing.size() > group.size()) {
+                                int match = 0;
+                                for (auto p : group) for (auto ep : existing) if (p == ep) match++;
+                                if (match == group.size()) { redundant = true; break; }
+                            }
                         }
-                    }
+                        if (!redundant) Groups.push_back(group);
                 }
             }
         }
-        return Groups;
+
+        set<pair<int, int>> uncovered;
+        for (int r = 0; r < 4; r++) for (int c = 0; c < 4; c++) if (grid[r][c] == 1) uncovered.insert({r, c});
+
+        while (!uncovered.empty()) {
+            int bestPI = -1, maxCover = -1;
+            for (int i = 0; i < Groups.size(); i++) {
+                int count = 0;
+                for (auto p : Groups[i]) if (uncovered.count(p)) count++;
+                if (count > maxCover) { maxCover = count; bestPI = i; }
+            }
+            if (bestPI == -1) break;
+            finalGroups.push_back(Groups[bestPI]);
+            for (auto p : Groups[bestPI]) uncovered.erase(p);
+        }
+        return finalGroups;
     }
     vector<vector<pair<int, int>>> Groups;
 
