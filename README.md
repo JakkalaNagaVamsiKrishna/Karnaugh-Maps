@@ -1,5 +1,8 @@
-This is a visualiser for 4 variable Karnaugh-maps which are helpful for minimisation of Boolean algrbraic functions 
+This is a visualiser for 4 variable Karnaugh-maps which are helpful for minimisation of Boolean algebraic functions 
 
+I made this just for making digitalised KMap diagrams for my lab report. 
+
+Feel free to use it.
 
 # Usage Protocol
 
@@ -12,3 +15,8 @@ You can see a file named "kmap.svg" containing a visualisation of the KMap for t
 This project doesn't contain any dependencies so you can run it without installing any other dependencies
 
 Just make sure that your g++ compiler is up to date
+
+
+Any kind of constructive feedback is welcomed.
+
+Happy coding...
